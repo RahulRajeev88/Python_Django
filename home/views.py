@@ -4,11 +4,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    numbers = {
-        'num1':10,
+    fruits = {
+        'fruits': ['Banana','Apple','Orange','Mango','Kiwi','Avocado']
 
     }
-    return render(request,'index.html',numbers)
+    return render(request,'index.html',fruits)
 
 def about(request):
     return render(request,'about.html')

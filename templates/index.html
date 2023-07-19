@@ -8,13 +8,10 @@
 </head>
 <body>
     <h1>Home Page</h1>
-    {% if num1 > 0 %}
-        <h2>Positive Number</h2>
-    {% elif num1 < 0 %}
-        <h2>Negative Number</h2>
-    {% else %}
-        <h2>Number is Zero</h2>     
-    {% endif %}     
+    {% for f in fruits %}
+        <h2>{{f}}</h2>
+    {% endfor %}
+     
 
     
 </body>
