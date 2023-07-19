@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>Home Page</h1>
-    <h2>Name is {{name}}</h2>
-    <h2>Age is {{Age}}</h2>
-    <h2>Place is {{Place}}</h2>
+    {% if num1 > 0 %}
+        <h2>Positive Number</h2>
+    {% elif num1 < 0 %}
+        <h2>Negative Number</h2> 
+    {% endif %}     
+    
+    
 </body>
 </html>
