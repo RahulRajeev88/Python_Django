@@ -43,6 +43,9 @@ INSTALLED_APPS = [
     'livereload',
     'django.contrib.staticfiles',
     'home',
+    'bootstrap4',
+    'crispy_bootstrap4',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -136,3 +139,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL = '/media/'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"

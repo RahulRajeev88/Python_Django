@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import Bookingform
 from .models import Departments, Doctors
 
 
@@ -8,10 +9,15 @@ def index(request):
     return render(request,'index.html')
 
 def about(request):
+    
     return render(request,'about.html')
 
 def booking(request):
-    return render(request,'booking.html')
+    form = Bookingform()
+    dict_form = {
+        'form': form
+    }
+    return render(request,'booking.html',dict_form)
 
 def doctors(request):
     dict_docs = {
