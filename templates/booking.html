@@ -10,17 +10,20 @@ Booking
 
 <h1 class="text-center";>Make An Appointment</h1>
 <hr>
-<div class='container w-50 text-center my-5'>
+<div class='container w-50 text-center  my-5 bg-info'>
 
 
-    <form action="">
+    <form action="" method='POST'>
+        {% csrf_token %}
         {{form|crispy}}
         <br>
       
 
     
 
-        <button class='btn btn-primary' type='submit'>Submit</button>
+        <button class='btn btn-primary mb-3' type='submit'>Submit</button>
+        
+       
     </form>
 
 </div>
